@@ -1,8 +1,11 @@
 ---
 - hosts: rh
   tasks:
-  - name: abc
-    ping:
+  - name: date before
+    command: date
+    register: datebef
+  - debug:
+      var: databef
   - name: sleep
     command: sleep 15
   - name: date
