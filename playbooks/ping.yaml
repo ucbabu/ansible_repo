@@ -1,0 +1,12 @@
+---
+- hosts: rh
+  tasks:
+  - name: abc
+    ping:
+  - name: sleep
+    command: sleep 15
+  - name: date
+    command: date
+    register: datereg
+  - debug:
+      var: datereg
