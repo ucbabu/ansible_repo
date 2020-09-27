@@ -5,7 +5,7 @@
     command: date
     register: datebef
   - debug:
-      var: databef
+      var: datebef
   - name: sleep
     command: sleep 15
   - name: date
